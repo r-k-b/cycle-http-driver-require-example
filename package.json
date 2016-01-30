@@ -1,0 +1,26 @@
+{
+  "name": "@rkb/cycle-http-driver-require-example",
+  "version": "1.0.0",
+  "description": "demo of import weirdness between jspm/systemjs and @cycle/http-driver's require statements",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node systemjs-build.js",
+    "installsubdeps": "jspm install npm:emitter npm:reducer"
+  },
+  "author": "Robert K. Bell",
+  "license": "ISC",
+  "devDependencies": {
+    "jspm": "0.16.25"
+  },
+  "jspm": {
+    "dependencies": {
+      "@cycle/http": "npm:@cycle/http@^8.0.0"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}
